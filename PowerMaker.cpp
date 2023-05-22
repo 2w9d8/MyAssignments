@@ -36,15 +36,15 @@ void message(string varName) {
     cout << "Please input the " << varName << " value : \n";
 }
 
+
 int getPower(int x, int power) {
-    int result = 0;
+    int result = 1;
     if (power != 0) {
-        for (int j = 1 ; j < power; j++) {
-            result = x*x;
-            return result;
+        for (int j = 0 ; j < power; j++) {
+            result *= x;
         }
+        return result;
     } else {
-        result = 1;
         return result;
     }
     return result;
